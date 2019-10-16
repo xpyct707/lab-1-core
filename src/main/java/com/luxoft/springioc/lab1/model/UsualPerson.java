@@ -25,6 +25,10 @@ public class UsualPerson implements Person {
         this.age = age;
     }
 
+    public UsualPerson(Country country) {
+        this.country = country;
+    }
+
     public void sayHello(Person person) {
     }
 }
