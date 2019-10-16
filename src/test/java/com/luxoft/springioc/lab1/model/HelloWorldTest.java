@@ -1,14 +1,12 @@
 package com.luxoft.springioc.lab1.model;
 
-import static org.junit.Assert.*;
-
-import org.junit.*;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
-import com.luxoft.springioc.lab1.model.Country;
-import com.luxoft.springioc.lab1.model.Person;
-import com.luxoft.springioc.lab1.model.UsualPerson;
+import static org.junit.Assert.assertEquals;
 
 public class HelloWorldTest {
 	private static final String APPLICATION_CONTEXT_XML_FILE_NAME = "classpath:application-context.xml";
