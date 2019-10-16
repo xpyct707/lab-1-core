@@ -4,10 +4,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="person" class="com.luxoft.springioc.lab1.model.UsualPerson">
+    <bean id="person" class="com.luxoft.springioc.lab1.model.UsualPerson" autowire="byName">
         <property name="name" value="John Smith"/>
         <property name="age" value="35"/>
-        <property name="country" ref="country"/>
     </bean>
 
     <bean id="country" class="com.luxoft.springioc.lab1.model.Country" autowire="byName">
